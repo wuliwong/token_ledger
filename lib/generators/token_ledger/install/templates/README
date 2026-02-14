@@ -1,0 +1,41 @@
+===============================================================================
+
+  TokenLedger has been installed!
+
+  Created migrations:
+    ✓ db/migrate/XXXXXX_create_ledger_tables.rb
+    ✓ db/migrate/XXXXXX_add_cached_balance_to_users.rb
+
+===============================================================================
+
+Next steps:
+
+  1. Run migrations:
+     rails db:migrate
+
+  2. Add to app/models/user.rb:
+
+     has_many :ledger_transactions,
+              as: :owner,
+              class_name: "TokenLedger::LedgerTransaction"
+
+     def balance
+       cached_balance
+     end
+
+  3. Optional: Create seed accounts (see README for examples)
+
+  4. Start using the ledger:
+
+     TokenLedger::Manager.deposit(
+       owner: user,
+       amount: 100,
+       description: "Welcome bonus",
+       external_source: "promo",
+       external_id: "signup_#{user.id}"
+     )
+
+  5. Read the full documentation:
+     https://github.com/stablegen/token_ledger#readme
+
+===============================================================================
