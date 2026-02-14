@@ -137,7 +137,7 @@ gem "token_ledger"
 If you want the latest unreleased code from GitHub:
 
 ```ruby
-gem "token_ledger", git: "https://github.com/stablegen/token_ledger", branch: "main"
+gem "token_ledger", git: "https://github.com/wuliwong/token_ledger", branch: "main"
 ```
 
 Install and generate migrations:

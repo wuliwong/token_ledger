@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Double-entry token ledger for Rails applications"
   spec.description = "A Rails engine providing thread-safe, double-entry accounting for user tokens with reserve/capture semantics and scoped idempotency"
-  spec.homepage = "https://github.com/stablegen/token_ledger"
+  spec.homepage = "https://github.com/wuliwong/token_ledger"
   spec.required_ruby_version = ">= 3.0.0"
   spec.license = "MIT"
 
-  spec.metadata["homepage_uri"] = "https://github.com/stablegen/token_ledger#readme"
-  spec.metadata["source_code_uri"] = "https://github.com/stablegen/token_ledger"
-  spec.metadata["bug_tracker_uri"] = "https://github.com/stablegen/token_ledger/issues"
-  spec.metadata["changelog_uri"] = "https://github.com/stablegen/token_ledger/blob/main/CHANGELOG.md"
+  spec.metadata["homepage_uri"] = "https://github.com/wuliwong/token_ledger#readme"
+  spec.metadata["source_code_uri"] = "https://github.com/wuliwong/token_ledger"
+  spec.metadata["bug_tracker_uri"] = "https://github.com/wuliwong/token_ledger/issues"
+  spec.metadata["changelog_uri"] = "https://github.com/wuliwong/token_ledger/blob/main/CHANGELOG.md"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   # Specify which files should be added to the gem when it is released.
