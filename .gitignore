@@ -1,0 +1,4 @@
+
+# Build artifacts
+pkg/*.gem
+*.gem
